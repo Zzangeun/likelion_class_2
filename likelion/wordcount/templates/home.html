@@ -1,0 +1,20 @@
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/wordcount.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<div class="container-fluid titlebar text-center">
+    <h1 class="margin title">WORDCOUNT</h1>
+    <h3><a href="{% url 'about' %}" style="color:wheat">-ABOUT-</a></h3>
+</div>
+
+<div class="container-fluid maintext text-center">
+    <form action="{% url 'result' %}">
+        <textarea cols="100" rows="10" name="fulltext">Write Here!</textarea>
+        <br>
+        <input class="button btn btn-outline-dark btn-lg" type="submit" value="COUNT">
+    </form>
+</div>

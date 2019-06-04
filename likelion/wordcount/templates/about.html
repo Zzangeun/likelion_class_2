@@ -1,0 +1,18 @@
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/wordcount.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+
+<div class="container-fluid titlebar text-center">
+    <h1 class="margin title">ABOUT</h1>
+    <h3><a href="{% url 'home' %}" style="color:wheat">-HOME-</a></h3>
+</div>
+
+<div class="container-fluid maintext text-center">
+    <p>안녕하세요.<br>이곳은 글자를 세주는 멋쟁이 사자처럼의 워드카운트 웹페이지입니다.<br>여기서 글자를 세세요.</p>
+</div>
+
